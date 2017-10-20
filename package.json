@@ -1,5 +1,5 @@
 {
-  "name": "business-ecosystem-logic-proxy",
+  "name": "bae-logic-proxy-test",
   "version": "5.4.1",
   "description": "Logic Layer for the Business API Ecosystem",
   "author": "UPM",
@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FIWARE-TMForum/business-ecosystem-logic-proxy"
+    "url": "https://github.com/FIWARE-TMForum/bae-logic-proxy-test"
   },
   "contributors": [
     {
