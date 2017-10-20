@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y git python-pip wget mongodb
 
 RUN pip install sh
 
-RUN git clone https://github.com/FIWARE-TMForum/business-ecosystem-logic-proxy
+RUN git clone https://github.com/danielpuschmann/bae-logic-proxy-test.git
 
 WORKDIR business-ecosystem-logic-proxy
 
