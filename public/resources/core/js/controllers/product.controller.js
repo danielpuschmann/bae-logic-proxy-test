@@ -120,6 +120,10 @@
                 templateUrl: 'stock/product/create/assets'
             },
             {
+                title: 'Datastore'
+                templateUrl: 'stock/product/create/datastore'
+            },
+            {
                 title: 'Characteristics',
                 templateUrl: 'stock/product/create/characteristics'
             },
