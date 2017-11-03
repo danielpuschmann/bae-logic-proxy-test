@@ -1,0 +1,21 @@
+form(name="step.form", novalidate)
+    div(ng-if="createVM.assetTypes.length)
+      .form-group
+        label Asset URL
+        input.form-control(type="url", ng-model="createVM.digitalChars[2].productSpecCharacteristicValue[0].value")
+      .form-group(ng-show="createVM.isSelected('FILE')")
+        label Asset File
+        input.form-control(type="file", file-model="createVM.assetFile")
+      .form-group
+        label Media Type
+        div(ng-show="!createVM.currentType.mediaTypes.length")
+          input.form-control(type="text", ng-model="createVM.digitalChars[1].productSpecCharacteristicValue[0].value")
+        div(ng-show="createVM.currentType.mediaTypes.length")
+          select.form-control(ng-model="createVM.digitalChars[1].productSpecCharacteristicValue[0].value")
+            option(ng-repeat="media in createVM.currentType.mediaTypes", value="{{ media }}") {{ media }}
+    div(ng-show="!createVM.assetTypes.length && createVM.isDigital")
+      .alert.alert-info There isn't any digital asset type supported.
+
+  .form-group.text-right
+    a.btn.btn-default.z-depth-1(ng-click="createForm.nextStep($index + 1, createVM.stepList[$index + 1])", ng-disabled="!step.form.$valid")
+      span.item-text Next

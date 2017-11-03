@@ -199,14 +199,24 @@ html(ng-app="app")
       include ./partials/stock/product/create-form-attachments.jade
     script(type="text/ng-template", id="stock/product/create/assets")
       include ./partials/stock/product/create-form-assets.jade
-    script(type="text/ng-template", id="stock/product/create/multiple")
-      include ./partials/stock/product/create-form-multiple.jade
     script(type="text/ng-template", id="stock/product/create/relationships")
       include ./partials/stock/product/create-relationship.jade
     script(type="text/ng-template", id="stock/product/create/terms")
       include ./partials/stock/product/create-form-terms.jade
     script(type="text/ng-template", id="stock/product/create/finish")
       include ./partials/stock/product/create-form-finish.jade
+
+    script(type="text/ng-template", id="stock/product/import")
+      include ./partials/stock/product/import.jade
+    script(type="text/ng-template", id="stock/product/import/general")
+      include ./partials/stock/product/import-form.jade
+    script(type="text/ng-template", id="stock/product/import/datastore")
+      include ./partials/stock/product/import-datastore.jade
+    script(type="text/ng-template", id="stock/product/import/terms")
+      include ./partials/stock/product/import-terms.jade
+    script(type="text/ng-template", id="stock/product/import/finish")
+      include ./partials/stock/product/import-form-finish.jade
+
     script(type="text/ng-template", id="stock/product/update")
       include ./partials/stock/product/update.jade
     script(type="text/ng-template", id="stock/product/update/bundled")
